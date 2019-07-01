@@ -17,3 +17,11 @@ function driverNamesWithRevenueOver(driverObjs, revenue) {
   }
   return resultArr;
 }
+
+function exactMatch(driversArr, attributeObj) {
+  const attribute = Object.keys(attributeObj)[0];
+
+  return driversArr.filter(function(driver) {
+    return driver.attribute === attributeObj;
+  })
+}
