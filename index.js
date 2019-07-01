@@ -37,7 +37,6 @@ function exactMatchToList(driversArr, attributeObj) {
   debugger;
   for (const driver of matchDrivers) {
     returnArr.push(driver.name);
-    
-  return returnArr;
   }
+  return returnArr;
 }
