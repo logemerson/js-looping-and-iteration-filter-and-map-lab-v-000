@@ -5,3 +5,15 @@ function driversWithRevenueOver(driverObjs, revenue) {
   })
   return result;
 }
+
+function driverNamesWithRevenueOver(driverObjs, revenue) {
+  const resultArr = [];
+  // driverObjs = [{name: "Sally", revenue: 400}, ...]
+  const resultObjs = driverObjs.filter(function(driver) {
+    return driver.revenue > revenue;
+  })
+  for (const driver of resultObjs) {
+    resultArr.push(driver.name);
+  }
+  return resultArr;
+}
